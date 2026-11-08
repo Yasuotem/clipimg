@@ -1,0 +1,26 @@
+[project]
+name = "clipimg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yasuotem", email = "yso1969Tera@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "pyperclip>=1.11.0",
+    "pyvips>=3.2.0",
+    "typer>=0.28.0",
+]
+
+[project.scripts]
+clipimg = "clipimg.main:app"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.ty.environment]
+python = ".venv\\Scripts\\python.exe"
